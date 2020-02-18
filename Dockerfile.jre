@@ -1,0 +1,5 @@
+FROM quay.io/radanalyticsio/ubi-jre-1.8.0-minimal
+COPY ./demo/service-a/target/demo-runner.jar /application.jar
+COPY ./demo/service-a/target/lib /lib
+EXPOSE 8080
+ENTRYPOINT ["java","-jar","application.jar", "-Dquarkus.http.host=0.0.0.0"]

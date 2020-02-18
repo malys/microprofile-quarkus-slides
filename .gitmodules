@@ -1,0 +1,4 @@
+[submodule "http-go-server"]
+	path = http-go-server
+	url = https://github.com/malys/http-go-server.git
+	branch = master
