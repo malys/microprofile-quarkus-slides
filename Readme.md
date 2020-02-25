@@ -5,6 +5,11 @@ highlightTheme: "monokai"
 slideNumber: true
 title: "Microprofile + Quarkus; new Java player"
 ---
+
+![](img/eclipse.jpg) ![](img/micro.jpg) ![](img/profile.png)
+
+--
+
 # Eclipse MicroProfile
 
 --
@@ -49,8 +54,8 @@ Compétence présente, évolution JEE
 
 ---
 
-* 12x the pace of traditional Java EE
-
+* new governance {.fragment .fade-right} 
+* 12x the pace of traditional Java EE {.fragment .fade-right}
 * with less risk and smaller feature sets, developers can adopt new innovations more quickly {.fragment .fade-right}
 
 --
@@ -64,12 +69,12 @@ Compétence présente, évolution JEE
 
 * Released: 11/4/19 {.fragment .fade-right}
   * 3.1 -> 10/8/19 {.fragment .fade-right}
+  * 3.0 -> 6/11/19 {.fragment .fade-right}
   * 2.0 -> 6/20/18 {.fragment .fade-right}
 
 
 <aside class="notes">
 3.3 2/2020
-reactive in progress
 </aside>
 
 ---
@@ -96,6 +101,8 @@ JSON-B: Binding from JSON to Object
 
 ![](./img/quarkus.png)
 
+Current version 1.2.10
+
 
 --
 
@@ -111,17 +118,88 @@ Code: demo.cmd
 
 ---
 
-![](./img/quarkus_how_to.png)
+#### Developer joy
+  * Simple {.fragment .fade-right}
+  * Productivity {.fragment .fade-right} 
+
+<aside class="notes">
+Unified configuration
+Zero config, live reload in the blink of an eye
+Streamlined code for the 80% common usages, flexible for the 20%
+No hassle native executable generation
+</aside>
 
 ---
 
-### Performance
+#### Performance
+
+  * optimized libraries 
 
 ![](./img/quarkus_perf.png)
 
 ---
 
+  * native packaging 
+
+![](./img/quarkus_how_to.png)
+
+
+---
+
 Compare : compare.cmd
+
+---
+
+#### Ecosystem
+
+---
+
+* Standard 
+* Libraries
+
+![](./img/quarkus_extensions.png)
+
+---
+
+### Next
+
+* Microprofile with Smallrye {.fragment .fade-right}
+  * GraphQL {.fragment .fade-right}
+  * Reactive Messaging {.fragment .fade-right}
+  * Reactive Streams Operators {.fragment .fade-right}
+
+
+<aside class="notes">
+Open tracing & Metrics & health: télémétrie des applications
+Reactive Messaging: Kafka  provides a way to inject streams into CDI beans
+Reactive Streams Operators: reactive programming
+</aside>
+
+---
+
+* [GraalVM 20.x](https://www.graalvm.org/docs/release-notes/20_0/)
+  * Windows advanced support {.fragment .fade-right}
+  * Performance {.fragment .fade-right}
+  * Tooling (VSCode) {.fragment .fade-right}
+  * Polyglot improvements {.fragment .fade-right}
+  
+---
+
+* [Quarkus](https://github.com/orgs/quarkusio/projects/5)  
+  * GraphQL {.fragment .fade-right}
+  * Tooling (CLI, Gradle) {.fragment .fade-right}
+  * Extensions (Redis, Liquibase) {.fragment .fade-right}
+
+
+<aside class="notes">
+Open tracing & Metrics & health: télémétrie des applications
+Reactive Messaging: Kafka  provides a way to inject streams into CDI beans
+Reactive Streams Operators: reactive programming
+</aside>
+
+---
+
+
 
 --
 
