@@ -199,8 +199,6 @@ Reactive Streams Operators: reactive programming
 
 ---
 
-
-
 --
 
 ## Conclusion

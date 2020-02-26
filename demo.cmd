@@ -15,11 +15,15 @@ echo "Mode dev"  && ^
 start mvn compile quarkus:dev -f ./demo/service-a && ^
 pause && ^
 echo "Mode Thorntail"  && ^
+cp -r ./demo/service-a ./demo/service-a-tmp  && ^
 cp pom.xml ./demo/service-a/ && ^
 cp microprofile-config.properties ./demo/service-a/src/main/resources/META-INF/ && ^
-mvn -f ./demo/service-a clean package -Pthorntail && ^
+start mvn -f ./demo/service-a clean package -Pthorntail && ^
+pause
 start java  -jar ./demo/service-a/target/thorntail-thorntail.jar && ^
+pause
 http :8080/data/hello && ^
 pause
 echo "Open pom.xml Thorntail"  && ^
-start pom.xml
+start pom.xml && ^
+mvn -f ./demo/service-a-tmp clean package -Pquarkus 
